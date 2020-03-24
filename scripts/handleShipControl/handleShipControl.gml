@@ -8,11 +8,7 @@ if (keyboard_check(ord("D"))) {
 if (keyboard_check(ord("W"))) {
 	accel = 1;
 } else {
-	if (keyboard_check(ord("S"))) {
-		accel = -1;
-	} else {
-		accel = 0;
-	}
+	accel = 0;
 }
 
 

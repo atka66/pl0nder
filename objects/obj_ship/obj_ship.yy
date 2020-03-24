@@ -90,7 +90,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "7",
             "varName": "speedLimit",
             "varType": 1
         },
@@ -134,6 +134,20 @@
             "resourceFilter": 1023,
             "value": "100",
             "varName": "hp",
+            "varType": 1
+        },
+        {
+            "id": "7871027f-0e4d-4734-b355-86bd4eb490d0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "maxHp",
             "varType": 1
         }
     ],

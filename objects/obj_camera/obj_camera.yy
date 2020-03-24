@@ -33,6 +33,26 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "030559a0-4494-4769-a1d4-606b0cb152d8"
+        },
+        {
+            "id": "e2d00a10-6fd1-40f3-a6d7-3188a479eb9f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "030559a0-4494-4769-a1d4-606b0cb152d8"
+        },
+        {
+            "id": "cf9a7ce7-932e-4e0d-9cf9-07ecccd90aa0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 27,
+            "eventtype": 9,
+            "m_owner": "030559a0-4494-4769-a1d4-606b0cb152d8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -93,6 +113,62 @@
             "value": "0",
             "varName": "shakeOffsetY",
             "varType": 1
+        },
+        {
+            "id": "fd395afc-6d70-4515-8571-5c4c364cd0ed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "camX",
+            "varType": 0
+        },
+        {
+            "id": "cb8200ea-022d-4a2f-bb09-e616b053c8c6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "camY",
+            "varType": 0
+        },
+        {
+            "id": "f0105da9-bd0b-45c5-be8a-4ae26c91fecc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "scale",
+            "varType": 0
+        },
+        {
+            "id": "6b9ab73a-e43e-40ac-920a-f7765260b018",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "deathDim",
+            "varType": 0
         }
     ],
     "solid": false,

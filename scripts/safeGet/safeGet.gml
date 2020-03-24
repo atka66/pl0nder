@@ -1,0 +1,1 @@
+return is_undefined(argument0) ? argument1 : argument0;
