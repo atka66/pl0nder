@@ -9,11 +9,11 @@ if (instance_exists(obj_player)) {
 	camera_set_view_size(view_camera[0], 512 * scale, 384 * scale);
 	camera_set_view_border(view_camera[0], 512 * scale / 2, 384 * scale / 2);
 
-	adjustLayer("bg1", scale, camX, camY);
+	adjustLayer("bg_space", scale, camX, camY);
 
-	for (var i = 1; i < 4; i++) {
+	for (var i = 2; i < 5; i++) {
 		adjustLayer(
-			"bg" + string(i + 1), 1,
+			"bg_stars_" + string(i - 1), 1,
 			(camX + (camera_get_view_width(view_camera[0]) / 2)) * (1 - (i * 0.05)),
 			(camY + (camera_get_view_height(view_camera[0]) / 2)) * (1 - (i * 0.05))
 		);
@@ -24,7 +24,7 @@ var hudX = camX + shakeOffsetX;
 var hudY = camY + shakeOffsetY;
 // death overlay
 draw_sprite_ext(bg_black, 0, camX, camY, scale, scale, 0, c_white, deathDim);
-drawText(camX + (scale * 192), camY + (scale * 180), "WRECKED", scale * 3, c_white, deathDim);
+drawText(camX + (scale * 190), camY + (scale * 180), "WRECKED", scale * 3, c_white, deathDim);
 // hud
 var speedRate = instance_exists(obj_player) ? obj_player.speed / obj_player.speedLimit : 0;
 var hpRate = instance_exists(obj_player) ? obj_player.hp / obj_player.maxHp : 0;
@@ -49,3 +49,11 @@ draw_sprite_part_ext(spr_hp, 0,
 	hudY + (scale * 341),
 	scale, scale, c_white, 0.3
 );
+
+/// menu
+if (instance_exists(obj_ctrl_menu_galaxymap)) {
+	drawText(hudX + (scale * 100), hudY + (scale * 100), "FAST TRAVEL", scale * 2, c_white, 0.5);
+	for (var i = 0; i < array_length_1d(global.rooms); i++) {
+		drawText(hudX + (scale * 110), hudY + (scale * (130 + (i * 20))), global.rooms[i], scale * 2, c_white, i == obj_ctrl_menu_galaxymap.selectedMap ? 1.0 : 0.5);
+	}
+}

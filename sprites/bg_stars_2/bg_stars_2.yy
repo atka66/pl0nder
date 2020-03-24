@@ -2,7 +2,7 @@
     "id": "28d4119c-606a-4c36-a7b5-bd7103b1bd2a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "bg_space_3",
+    "name": "bg_stars_2",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "r_space_1",
     "id": "9c557f75-389d-4db9-8227-f1d5dba3a3d3",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -137,7 +137,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "bg4",
+            "name": "bg_stars_3",
             "id": "e21f0c8e-17ad-4f65-814a-b59699e25442",
             "animationFPS": 15,
             "animationSpeedType": "0",
@@ -172,7 +172,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "bg3",
+            "name": "bg_stars_2",
             "id": "61897534-dd18-4337-9bf5-0be17474d477",
             "animationFPS": 15,
             "animationSpeedType": "0",
@@ -207,7 +207,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "bg2",
+            "name": "bg_stars_1",
             "id": "8f0aacb2-8346-42ee-9583-ddd395aa072a",
             "animationFPS": 15,
             "animationSpeedType": "0",
@@ -242,7 +242,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "bg1",
+            "name": "bg_space",
             "id": "593b53a1-bc4e-4b4c-ab3f-ecba51a4bb42",
             "animationFPS": 15,
             "animationSpeedType": "0",
