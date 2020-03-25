@@ -10,6 +10,7 @@ if (instance_exists(obj_player)) {
 	}
 	if (instance_exists(obj_ctrl_menu_galaxymap)) {
 		if (keyboard_check_pressed(vk_enter)) {
+			room_persistent = true;
 			room_goto(global.rooms[obj_ctrl_menu_galaxymap.selectedMap]);
 		}
 		if (keyboard_check_pressed(vk_up)) {

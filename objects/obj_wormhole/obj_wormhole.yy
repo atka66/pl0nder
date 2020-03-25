@@ -1,19 +1,10 @@
 {
-    "id": "56dccc42-489b-4104-b737-bc03196957c6",
+    "id": "b356827d-f570-4d56-9c48-2aca16227d1b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_explosion",
+    "name": "obj_wormhole",
     "eventList": [
-        {
-            "id": "ed48dbc4-f75d-42a8-8c5d-6805031e9d98",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "56dccc42-489b-4104-b737-bc03196957c6"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "ae1e9404-79bd-461d-9f75-dd9198d62e40",
     "visible": true
 }

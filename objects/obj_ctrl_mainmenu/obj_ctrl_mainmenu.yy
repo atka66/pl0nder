@@ -93,7 +93,21 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "appear",
+            "varName": "appearTitle",
+            "varType": 3
+        },
+        {
+            "id": "0379add0-0da7-400f-84df-947cd86df066",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "appearBackground",
             "varType": 3
         },
         {

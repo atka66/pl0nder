@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "3fd608a8-5619-466e-b006-119a07482890",
+            "Value": {
+                "id": "46b9dc62-ddee-463e-af66-1299bf0824a8",
+                "resourcePath": "sprites\\spr_explosion_2\\spr_explosion_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "40e16dbd-3501-4102-8672-c0fd291f90b2",
             "Value": {
                 "id": "0c27a84a-e72e-4144-8b97-0ecd7fff8220",
@@ -196,6 +204,14 @@
                 "id": "e1e92e61-ba63-4181-881e-df427e1e8eed",
                 "resourcePath": "views\\4499a056-6caa-414b-a52d-0edb7d4adf7d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4ad44742-fb10-4fef-8bcb-3d7d73c4e7d5",
+            "Value": {
+                "id": "3979f640-32ce-487a-9ded-a7b9d6ba1426",
+                "resourcePath": "sprites\\spr_wreck\\spr_wreck.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -391,6 +407,22 @@
             }
         },
         {
+            "Key": "ae1e9404-79bd-461d-9f75-dd9198d62e40",
+            "Value": {
+                "id": "099958a7-7e71-4532-84b8-0eb7a711308e",
+                "resourcePath": "sprites\\spr_wormhole\\spr_wormhole.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b356827d-f570-4d56-9c48-2aca16227d1b",
+            "Value": {
+                "id": "09b6a691-ee6f-4cb3-bbc7-3fb9e1295bef",
+                "resourcePath": "objects\\obj_wormhole\\obj_wormhole.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0bf0e61-311b-40fd-b123-2a17a123318e",
             "Value": {
                 "id": "711cb908-3d28-407c-b1f7-66d85be8acd9",
@@ -450,8 +482,16 @@
             "Key": "d8806ea9-9f8d-4741-aac3-988bb361f983",
             "Value": {
                 "id": "0fa97bfd-7386-4b42-9a34-bacdbfc07574",
-                "resourcePath": "sprites\\spr_explosion\\spr_explosion.yy",
+                "resourcePath": "sprites\\spr_explosion_1\\spr_explosion_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d9e3cd8c-a303-48c3-b186-42fb0627b183",
+            "Value": {
+                "id": "67c8a323-f829-4008-89a2-c7183bbf74a1",
+                "resourcePath": "objects\\obj_wreck\\obj_wreck.yy",
+                "resourceType": "GMObject"
             }
         },
         {
