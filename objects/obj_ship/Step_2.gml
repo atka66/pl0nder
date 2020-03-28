@@ -6,11 +6,11 @@ if (hp < 0 && alive) {
 	accel = 0;
 	alive = false;
 	if (irandom(3) == 0) {
-		alarm[4] = room_speed * 1.5;
+		alarm[4] = room_speed * 1;
 	} else {
 		instance_destroy();
 	}
 }
 if (!alive) {
-	rotation += 15;
+	rotation += 10;
 }
