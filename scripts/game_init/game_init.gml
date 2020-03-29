@@ -18,3 +18,15 @@ for (var i = 0; i < 3; i++) {
 		global.savefiles[i] = pointer_null;
 	}
 }
+
+/// game metainfo
+enum mineral {
+	iron = 0,
+	gold = 1,
+	emerald = 2,
+	ruby = 3,
+	diamond = 4
+}
+
+// player info
+global.player_inventory = ds_list_create();

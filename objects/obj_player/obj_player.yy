@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
+        },
+        {
+            "id": "9ac40a23-c37e-4d2a-b9f2-232f914f2e89",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "07c2e559-bd8a-4b6d-97ab-cf112ccfbee1",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
         }
     ],
     "maskSpriteId": "34dc61c7-c821-4110-b8a5-209c88143e87",
@@ -50,7 +60,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "4edfbba9-4595-47f0-aeab-77e1f3951bc7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "cargoLimit",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

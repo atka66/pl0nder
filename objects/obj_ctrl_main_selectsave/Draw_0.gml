@@ -10,5 +10,5 @@ drawText(194, 118, "0", 8, c_white, 1.0);
 drawText(238, 128, "NDER", 6, c_white, 1.0);
 // saves
 for (var i = 0; i < 3; i++) {
-	drawText(84 + (i * 128), 300, "SLOT " + string(i + 1), 2, c_white, 1.0);
+	//drawText(84 + (i * 128), 300, "SLOT " + string(i + 1), 2, c_white, 1.0);
 }
