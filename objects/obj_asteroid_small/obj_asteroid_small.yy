@@ -76,8 +76,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.2",
+            "value": "0.5",
             "varName": "dropChance",
+            "varType": 0
+        },
+        {
+            "id": "41402528-6660-49ef-8d59-1e35e852e9fb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "rotation",
             "varType": 0
         }
     ],

@@ -43,6 +43,16 @@
             "enumb": 4,
             "eventtype": 2,
             "m_owner": "fdc1eea3-88e6-40c9-b866-9b2432c45cf0"
+        },
+        {
+            "id": "45365860-4386-451b-9ea9-5db0054b2a64",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 2,
+            "m_owner": "fdc1eea3-88e6-40c9-b866-9b2432c45cf0"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -102,20 +112,6 @@
             "resourceFilter": 1023,
             "value": "4",
             "varName": "speedLimit",
-            "varType": 1
-        },
-        {
-            "id": "98ebd26a-c437-4410-ab85-ebb9d5d09162",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "skinImage",
             "varType": 1
         },
         {

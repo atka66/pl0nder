@@ -25,7 +25,7 @@ for (var i = 1; i <= string_length(argument2); i++) {
 		case ".": subimg = 36; spriteWidth = 1; break;  case ":": subimg = 37; spriteWidth = 1; break;
 		case "-": subimg = 38; break;  case "!": subimg = 39; spriteWidth = 1; break;
 		case "?": subimg = 40; break;  case "(": subimg = 41; spriteWidth = 2; break;
-		case ")": subimg = 42; spriteWidth = 2; break;
+		case ")": subimg = 42; spriteWidth = 2; break;  case "/": subimg = 43; break;
 		default : subimg = -1; break;
 	}
 	if (subimg > -1) {

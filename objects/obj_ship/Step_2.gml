@@ -7,6 +7,7 @@ if (hp < 0 && alive) {
 	alive = false;
 	if (irandom(3) == 0) {
 		alarm[4] = room_speed * 1;
+		alarm[5] = room_speed / 4;
 	} else {
 		instance_destroy();
 	}

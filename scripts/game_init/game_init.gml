@@ -28,5 +28,13 @@ enum mineral {
 	diamond = 4
 }
 
+global.currentDockName = "UNNAMED";
 // player info
+global.player_skin = 0;
+global.player_credit = 0;
+global.player_maxHp = 100;
+global.player_hp = 100;
+global.player_maxFuel = 1000;
+global.player_fuel = 1000;
+global.player_cargoCapacity = 5;
 global.player_inventory = ds_list_create();

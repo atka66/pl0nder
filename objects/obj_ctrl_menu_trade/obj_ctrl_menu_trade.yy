@@ -55,6 +55,20 @@
             "value": "0",
             "varName": "selectedTab",
             "varType": 1
+        },
+        {
+            "id": "9ed902dd-083b-4b53-9440-f8ca169a7408",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "90",
+            "varName": "statusShipRotation",
+            "varType": 0
         }
     ],
     "solid": false,
