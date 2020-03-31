@@ -27,6 +27,7 @@ drawText(358, tabY, "QUESTS", 2, c_white, 1.0);
 if (selectedTab == 0) {
 	draw_sprite_ext(spr_menu_player_slot, 0, 128, 212, 6.0, 6.0, 0, c_white, 1.0);
 	draw_sprite_ext(spr_ships, global.player_skin, 128, 212, 3.0, 3.0, statusShipRotation, c_white, 1.0);
+	draw_sprite_ext(spr_ships_color, global.player_skin, 128, 212, 3.0, 3.0, statusShipRotation, global.player_skinColor, 0.7);
 	drawText(64, 288, "HULL", 2, c_white, 1.0);
 	draw_sprite(spr_menu_bar, 0, 64, 300);
 	var hpRate = global.player_hp / global.player_maxHp;

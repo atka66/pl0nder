@@ -57,6 +57,34 @@
             "varType": 1
         },
         {
+            "id": "45caecac-6b4f-4dff-9131-3f04b8763d3a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "maxAsteroidSize",
+            "varType": 1
+        },
+        {
+            "id": "88958db2-b044-45f5-ac8d-64f914acd0e7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "dropChance",
+            "varType": 0
+        },
+        {
             "id": "8f4f226c-3e3c-4e1d-8ab7-737934efb768",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

@@ -2,7 +2,7 @@
     "id": "927f5831-1257-48ca-8298-14c5b6a7b58a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_asteroid_small",
+    "name": "obj_asteroid",
     "eventList": [
         {
             "id": "1b71e9ef-b2ad-4b20-9a7e-849b2cf4d5de",
@@ -62,23 +62,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "1",
             "varName": "hp",
             "varType": 1
-        },
-        {
-            "id": "2c36776b-52c8-4599-a486-81dd46cf0d52",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.5",
-            "varName": "dropChance",
-            "varType": 0
         },
         {
             "id": "41402528-6660-49ef-8d59-1e35e852e9fb",
@@ -93,6 +79,34 @@
             "value": "0",
             "varName": "rotation",
             "varType": 0
+        },
+        {
+            "id": "da3b2381-2abe-4629-aa5e-16adf7052c77",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "size",
+            "varType": 1
+        },
+        {
+            "id": "beed163b-866a-4591-aa1d-2d47af15e01d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "drop",
+            "varType": 5
         }
     ],
     "solid": false,

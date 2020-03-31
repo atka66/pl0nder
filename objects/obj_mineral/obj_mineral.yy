@@ -43,7 +43,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "mineralType",
+            "varName": "type",
             "varType": 1
         }
     ],

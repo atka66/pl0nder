@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "6f7dd4be-6288-4d25-9963-77d3976d87ab",
+            "Value": {
+                "id": "4e0f7bdf-d3b0-4223-959a-518942d0966b",
+                "resourcePath": "sprites\\spr_ships_color\\spr_ships_color.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71fdbc77-386b-407f-bf09-3bdac8f0a0e8",
             "Value": {
                 "id": "7f8b70ef-ea4e-41b2-a265-12e2eb3a29e8",
@@ -434,7 +442,7 @@
             "Key": "86e79e2a-a17d-4a87-abdd-bbbe75b2d283",
             "Value": {
                 "id": "2c097535-1235-4445-8901-736f91b4e0a7",
-                "resourcePath": "objects\\obj_ship_enemy\\obj_ship_enemy.yy",
+                "resourcePath": "objects\\obj_ship_neutral\\obj_ship_neutral.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -442,7 +450,7 @@
             "Key": "927f5831-1257-48ca-8298-14c5b6a7b58a",
             "Value": {
                 "id": "12cd5341-068d-4de4-9c15-d35772a9e57e",
-                "resourcePath": "objects\\obj_asteroid_small\\obj_asteroid_small.yy",
+                "resourcePath": "objects\\obj_asteroid\\obj_asteroid.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -554,7 +562,7 @@
             "Key": "c315066a-3f33-4285-8226-c96dce3bf140",
             "Value": {
                 "id": "f5cfca7d-4abb-4be7-8d82-07772a7ad2dd",
-                "resourcePath": "sprites\\spr_asteroid_small\\spr_asteroid_small.yy",
+                "resourcePath": "sprites\\spr_asteroid\\spr_asteroid.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -11,7 +11,7 @@ if (alive) {
 	if (keyboard_check(ord("W"))) {
 		if (fuel > 0) {
 			accel = 1;
-			fuel -= 0.5;
+			fuel -= 0.2;
 		} else {
 			fuel = 0;
 			accel = 0;
