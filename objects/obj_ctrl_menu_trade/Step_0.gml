@@ -9,6 +9,22 @@ if (keyboard_check_pressed(ord("A"))) {
 if (keyboard_check_pressed(ord("D"))) {
 	selectedTab = (selectedTab + 1) % 4;
 }
+if (keyboard_check_pressed(ord("W"))) {
+	switch (selectedTab) {
+		case 2:
+			// upgrade
+			upgradeSelection = (upgradeSelection + 5 - 1) % 5;
+			break;
+	}
+}
+if (keyboard_check_pressed(ord("S"))) {
+	switch (selectedTab) {
+		case 2:
+			// upgrade
+			upgradeSelection = (upgradeSelection + 1) % 5;
+			break;
+	}
+}
 
 if (keyboard_check_pressed(ord("E"))) {
 	switch (selectedTab) {

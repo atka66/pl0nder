@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// name
+// dock name
 drawText(24, 16, "WELCOME TO", 2, c_white, 1.0);
 drawText(36, 32, global.currentDockName, 4, c_white, 1.0);
+// credit
+drawText(320, 16, "CREDITS:", 2, c_white, 1.0);
+drawText(336, 32, string(global.player_credit) + "C", 3, c_white, 1.0);
 // tabs
 var tabY = 88;
 if (selectedTab == 0) {
@@ -77,9 +80,9 @@ if (selectedTab == 1) {
 
 // upgrade
 if (selectedTab == 2) {
-	drawUpgradeSlot(144, global.upg_maxHp, global.player_equipped_maxHp, "SHIP HP");
-	drawUpgradeSlot(192, global.upg_maxFuel, global.player_equipped_maxFuel, "FUEL UNIT");
-	drawUpgradeSlot(240, global.upg_laser_dmg, global.player_equipped_laser_dmg, "LASER DAMAGE");
-	drawUpgradeSlot(288, global.upg_laser_cd, global.player_equipped_laser_cd, "FIRING RATE");
-	drawUpgradeSlot(336, global.upg_laser_count, global.player_equipped_laser_count, "TURRETS");
+	drawUpgradeSlot(144, global.upg_maxHp, global.player_equipped_maxHp, "SHIP HP", 0);
+	drawUpgradeSlot(192, global.upg_maxFuel, global.player_equipped_maxFuel, "FUEL UNIT", 1);
+	drawUpgradeSlot(240, global.upg_laser_dmg, global.player_equipped_laser_dmg, "LASER DAMAGE", 2);
+	drawUpgradeSlot(288, global.upg_laser_cd, global.player_equipped_laser_cd, "FIRING RATE", 3);
+	drawUpgradeSlot(336, global.upg_laser_count, global.player_equipped_laser_count, "TURRETS", 4);
 }
