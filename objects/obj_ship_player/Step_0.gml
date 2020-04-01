@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (alive) {
+	if (cd > 0) {
+		cd--;
+	}
 	if (keyboard_check(ord("A"))) {
 		rotation += 3;
 	}
@@ -21,9 +24,11 @@ if (alive) {
 	}
 
 
-	if (keyboard_check_pressed(ord("F"))) {
-		shipShoot(-4);
-		shipShoot(4);
+	if (keyboard_check(ord("F"))) {
+		if (cd == 0) {
+			cd = global.upg_laser_cd[# global.player_equipped_laser_cd, 2];
+			shipShoot(0, global.upg_laser_dmg[# global.player_equipped_laser_dmg, 2]);
+		}
 	}
 
 	if (keyboard_check_pressed(ord("E"))) {

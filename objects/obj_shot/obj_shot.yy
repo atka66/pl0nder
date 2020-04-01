@@ -85,6 +85,20 @@
             "value": "0",
             "varName": "ownerShip",
             "varType": 1
+        },
+        {
+            "id": "d9d1bcf8-30fe-43a3-9c3a-de31a63c867f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "damage",
+            "varType": 1
         }
     ],
     "solid": false,

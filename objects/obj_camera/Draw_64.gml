@@ -64,7 +64,7 @@ if (instance_exists(obj_ship_player)) {
 	//// cargo
 	drawText(
 		hudX + 24, hudY + 320, 
-		"CARGO: " + string(ds_list_size(global.player_inventory)) + "/" + string(global.player_cargoCapacity), 
+		"CARGO: " + string(ds_list_size(global.player_cargo)) + "/" + string(global.player_cargoCapacity), 
 		1.0, c_white, 0.5
 	);
 	//// tooltip

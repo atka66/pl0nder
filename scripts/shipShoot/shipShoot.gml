@@ -9,6 +9,7 @@ with (
 	)
 ) {
 	ownerShip = thisShip;
+	damage = argument1;
 	direction = rot;
 	image_angle = rot;
 }

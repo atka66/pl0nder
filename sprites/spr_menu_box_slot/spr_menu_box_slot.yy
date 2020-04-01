@@ -2,7 +2,7 @@
     "id": "b50bf3e8-93b2-4b0b-905e-068a04ebf677",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_menu_cargo_slot",
+    "name": "spr_menu_box_slot",
     "For3D": false,
     "HTile": false,
     "VTile": false,

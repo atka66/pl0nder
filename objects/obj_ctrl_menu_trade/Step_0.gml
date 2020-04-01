@@ -25,11 +25,9 @@ if (keyboard_check_pressed(ord("E"))) {
 			break;
 		case 1:
 			// selling cargo content
-			for (var i = ds_list_size(global.player_inventory) - 1; i >= 0; i--) {
-				show_debug_message(string(global.player_inventory[|i]));
-				show_debug_message(string(global.minerals[# global.player_inventory[|i], 2]));
-				global.player_credit += global.minerals[# global.player_inventory[|i], 2];
-				ds_list_delete(global.player_inventory, i);
+			for (var i = ds_list_size(global.player_cargo) - 1; i >= 0; i--) {
+				global.player_credit += global.minerals[# global.player_cargo[|i], 1];
+				ds_list_delete(global.player_cargo, i);
 			}
 			break;
 	}
