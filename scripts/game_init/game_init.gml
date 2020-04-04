@@ -47,9 +47,9 @@ global.upg_laserDmg[# 2,0] = "ION RAY"; global.upg_laserDmg[# 2,1] = 5000; globa
 global.upg_laserDmg[# 3,0] = "UBERCANNON"; global.upg_laserDmg[# 3,1] = 20000; global.upg_laserDmg[# 3,2] = 100;
 
 global.upg_laserReload = ds_grid_create(3, 3); // #0: display name - #1: value - #2: cooldown
-global.upg_laserReload[# 0,0] = "SLOW"; global.upg_laserReload[# 0,1] = 0; global.upg_laserReload[# 0,2] = 1.0;
-global.upg_laserReload[# 1,0] = "MEDIUM"; global.upg_laserReload[# 1,1] = 5000; global.upg_laserReload[# 1,2] = 0.5;
-global.upg_laserReload[# 2,0] = "FAST"; global.upg_laserReload[# 2,1] = 20000; global.upg_laserReload[# 2,2] = 0.2;
+global.upg_laserReload[# 0,0] = "SLOW"; global.upg_laserReload[# 0,1] = 0; global.upg_laserReload[# 0,2] = 0.5;
+global.upg_laserReload[# 1,0] = "MEDIUM"; global.upg_laserReload[# 1,1] = 5000; global.upg_laserReload[# 1,2] = 0.25;
+global.upg_laserReload[# 2,0] = "FAST"; global.upg_laserReload[# 2,1] = 20000; global.upg_laserReload[# 2,2] = 0.1;
 
 global.upg_laserCount = ds_grid_create(3, 3); // #0: display name - #1: value - #2: count
 global.upg_laserCount[# 0,0] = "ONE"; global.upg_laserCount[# 0,1] = 0; global.upg_laserCount[# 0,2] = 1;
@@ -63,7 +63,7 @@ global.player_equipped_shipHp = 0;
 global.player_equipped_shipFuel = 0;
 global.player_equipped_laserDmg = 0;
 global.player_equipped_laserReload = 0;
-global.player_equipped_laserCount = 2;
+global.player_equipped_laserCount = 0;
 
 global.player_skin = 0;
 global.player_skinColor = c_blue;
