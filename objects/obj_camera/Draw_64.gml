@@ -20,7 +20,7 @@ draw_sprite_part_ext(spr_hud_speedbar, 0,
 	1.0, 1.0, c_white, 0.5
 );
 /// hp
-var hpRate = instance_exists(obj_ship_player) ? obj_ship_player.hp / obj_ship_player.maxHp : 0;
+var hpRate = instance_exists(obj_ship_player) ? obj_ship_player.hp / global.upg_shipHp[# global.player_equipped_shipHp, 2] : 0;
 var hpColor = c_white;
 if (hpRate <= 0.25) {
 	hpColor = c_red;
@@ -35,7 +35,7 @@ draw_sprite_part_ext(spr_hud_hpbar, 0,
 	hudY + 341, 1.0, 1.0, hpColor, 0.5
 );
 /// fuel
-var fuelRate = instance_exists(obj_ship_player) ? obj_ship_player.fuel / obj_ship_player.maxFuel : 0;
+var fuelRate = instance_exists(obj_ship_player) ? obj_ship_player.fuel / global.upg_shipFuel[# global.player_equipped_shipFuel, 2] : 0;
 var fuelColor = c_white;
 if (fuelRate <= 0.25) {
 	fuelColor = c_red;

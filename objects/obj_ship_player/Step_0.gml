@@ -26,16 +26,20 @@ if (alive) {
 
 	if (keyboard_check(ord("F"))) {
 		if (cd == 0) {
-			cd = global.upg_laser_cd[# global.player_equipped_laser_cd, 2];
-			shipShoot(0, global.upg_laser_dmg[# global.player_equipped_laser_dmg, 2]);
+			cd = global.upg_laserReload[# global.player_equipped_laserReload, 2] * room_speed;
+			var laserCount = global.upg_laserCount[# global.player_equipped_laserCount, 2];
+			for (var i = 0; i < laserCount; i++) {
+				shipShoot(((32 / (laserCount + 1)) * (i + 1) - 16), global.upg_laserDmg[# global.player_equipped_laserDmg, 2]);
+			}
 		}
 	}
 
 	if (keyboard_check_pressed(ord("E"))) {
 		if (place_meeting(x, y, obj_dock)) {
-			persistGlobals();
+			globalizeVars();
 			global.currentDockName = obj_dock.name;
 			room_goto(r_game_menu_trade);
+			alarm[6] = 1;
 		}
 	}
 }

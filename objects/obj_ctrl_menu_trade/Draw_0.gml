@@ -34,30 +34,32 @@ if (selectedTab == 0) {
 	
 	drawText(64, 288, "HULL", 2, c_white, 1.0);
 	draw_sprite(spr_menu_bar, 0, 64, 300);
-	var hpRate = global.player_hp / global.player_maxHp;
+	var maxHp = global.upg_shipHp[# global.player_equipped_shipHp, 2]
+	var hpRate = global.player_hp / maxHp;
 	draw_sprite_part(spr_menu_bar, 1, 0, 0, hpRate * sprite_get_width(spr_menu_bar), sprite_get_height(spr_menu_bar), 64, 300);
-	drawText(194, 302, string(round(global.player_hp)) + "/" + string(global.player_maxHp), 1, c_white, 1.0);
+	drawText(194, 302, string(round(global.player_hp)) + "/" + string(maxHp), 1, c_white, 1.0);
 	drawText(64, 320, "FUEL", 2, c_white, 1.0);
 	draw_sprite(spr_menu_bar, 0, 64, 332);
-	var fuelRate = global.player_fuel / global.player_maxFuel;
+	var maxFuel = global.upg_shipFuel[# global.player_equipped_shipFuel, 2];
+	var fuelRate = global.player_fuel / maxFuel;
 	draw_sprite_part(spr_menu_bar, 2, 0, 0, fuelRate * sprite_get_width(spr_menu_bar), sprite_get_height(spr_menu_bar), 64, 332);
-	drawText(194, 334, string(round(global.player_fuel)) + "/" + string(global.player_maxFuel), 1, c_white, 1.0);
+	drawText(194, 334, string(round(global.player_fuel)) + "/" + string(maxFuel), 1, c_white, 1.0);
 	
 	drawText(216, 128, "HULL:", 2, c_white, 0.8);
-	drawText(288, 128, global.upg_maxHp[# global.player_equipped_maxHp, 0], 2, c_white, 1.0);
+	drawText(288, 128, global.upg_shipHp[# global.player_equipped_shipHp, 0], 2, c_white, 1.0);
 	drawText(216, 152, "TANK:", 2, c_white, 0.8);
-	drawText(288, 152, global.upg_maxFuel[# global.player_equipped_maxFuel, 0], 2, c_white, 1.0);
+	drawText(288, 152, global.upg_shipFuel[# global.player_equipped_shipFuel, 0], 2, c_white, 1.0);
 	drawText(216, 176, "ARMS:", 2, c_white, 0.8);
-	drawText(288, 176, global.upg_laser_dmg[# global.player_equipped_laser_dmg, 0], 2, c_white, 1.0);
+	drawText(288, 176, global.upg_laserDmg[# global.player_equipped_laserDmg, 0], 2, c_white, 1.0);
 	drawText(216, 192, "SPEED:", 2, c_white, 0.8);
-	drawText(288, 192, global.upg_laser_cd[# global.player_equipped_laser_cd, 0], 2, c_white, 1.0);
+	drawText(288, 192, global.upg_laserReload[# global.player_equipped_laserReload, 0], 2, c_white, 1.0);
 	drawText(216, 208, "COUNT:", 2, c_white, 0.8);
-	drawText(288, 208, global.upg_laser_count[# global.player_equipped_laser_count, 0], 2, c_white, 1.0);
+	drawText(288, 208, global.upg_laserCount[# global.player_equipped_laserCount, 0], 2, c_white, 1.0);
 	
-	if (global.player_hp < global.player_maxHp) {
+	if (global.player_hp < maxHp) {
 		drawText(256, 302, "E - REPAIR", 2, c_white, 1.0);
 	}
-	if (global.player_fuel < global.player_maxFuel) {
+	if (global.player_fuel < maxFuel) {
 		drawText(256, 334, "F - REFUEL", 2, c_white, 1.0);
 	}
 }
@@ -80,9 +82,9 @@ if (selectedTab == 1) {
 
 // upgrade
 if (selectedTab == 2) {
-	drawUpgradeSlot(144, global.upg_maxHp, global.player_equipped_maxHp, "SHIP HP", 0);
-	drawUpgradeSlot(192, global.upg_maxFuel, global.player_equipped_maxFuel, "FUEL UNIT", 1);
-	drawUpgradeSlot(240, global.upg_laser_dmg, global.player_equipped_laser_dmg, "LASER DAMAGE", 2);
-	drawUpgradeSlot(288, global.upg_laser_cd, global.player_equipped_laser_cd, "FIRING RATE", 3);
-	drawUpgradeSlot(336, global.upg_laser_count, global.player_equipped_laser_count, "TURRETS", 4);
+	drawUpgradeSlot(144, global.upg_shipHp, global.player_equipped_shipHp, 0, "HULL STRENGTH", "HP");
+	drawUpgradeSlot(192, global.upg_shipFuel, global.player_equipped_shipFuel, 1, "FUEL CAPACITY", "UNIT");
+	drawUpgradeSlot(240, global.upg_laserDmg, global.player_equipped_laserDmg, 2, "LASER DAMAGE", "DAMAGE");
+	drawUpgradeSlot(288, global.upg_laserReload, global.player_equipped_laserReload, 3, "LASER FIRING RATE", "SHOT/SEC");
+	drawUpgradeSlot(336, global.upg_laserCount, global.player_equipped_laserCount, 4, "LASER TURRETS", "TURRETS");
 }

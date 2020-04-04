@@ -1,8 +1,8 @@
 {
-    "id": "bd00c7db-081b-4704-b224-84b37aa9114a",
+    "id": "417d2c61-674d-4866-b3e6-d4d81b931d1f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "persistGlobals",
+    "name": "deglobalizeVars",
     "IsCompatibility": false,
     "IsDnD": false
 }

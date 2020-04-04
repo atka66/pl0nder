@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
+        },
+        {
+            "id": "c5e45a0e-d207-4438-9fb9-bf58fd9760f8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 6,
+            "eventtype": 2,
+            "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
         }
     ],
     "maskSpriteId": "34dc61c7-c821-4110-b8a5-209c88143e87",
@@ -74,26 +84,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1000",
+            "value": "0",
             "varName": "fuel",
             "varType": 0
         },
         {
-            "id": "76db5d10-0417-4d82-800f-b4587617e257",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1000",
-            "varName": "maxFuel",
-            "varType": 0
-        },
-        {
-            "id": "b0cab73d-8a2b-4b76-b017-47dd99821d69",
+            "id": "3f67085a-0748-4cfa-9dbe-bfa4704318dd",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,

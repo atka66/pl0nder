@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "417d2c61-674d-4866-b3e6-d4d81b931d1f",
+            "Value": {
+                "id": "fa521bfb-0044-4304-ae6a-3c16885e6ff4",
+                "resourcePath": "scripts\\deglobalizeVars\\deglobalizeVars.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "42ae5ef0-cc5b-438d-bad9-0f7813edd1f4",
             "Value": {
                 "id": "fcb86636-fa0c-4ae5-a2bf-7c304fe477b5",
@@ -364,6 +372,14 @@
                 "id": "ef6988c8-8564-44fe-9b47-fa6e94277fba",
                 "resourcePath": "views\\74ef0b7f-c533-433b-94e8-5fb576954631.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75401af6-98a4-4abf-a6f0-04c0a31b43e4",
+            "Value": {
+                "id": "41522dc8-c54f-4b4c-8bd5-740690dc83d6",
+                "resourcePath": "scripts\\upgrade\\upgrade.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -546,7 +562,7 @@
             "Key": "bd00c7db-081b-4704-b224-84b37aa9114a",
             "Value": {
                 "id": "120f769c-3967-40b6-824a-ba74f2fb859c",
-                "resourcePath": "scripts\\persistGlobals\\persistGlobals.yy",
+                "resourcePath": "scripts\\globalizeVars\\globalizeVars.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -726,7 +742,9 @@
         "86b122e0-3b21-484a-b1e2-fec4c9e376f3",
         "19959900-6f05-4512-a9e8-9ba880abb900",
         "bd00c7db-081b-4704-b224-84b37aa9114a",
-        "44ca92a9-f087-440e-bf26-eb6538715f21"
+        "417d2c61-674d-4866-b3e6-d4d81b931d1f",
+        "44ca92a9-f087-440e-bf26-eb6538715f21",
+        "75401af6-98a4-4abf-a6f0-04c0a31b43e4"
     ],
     "tutorial": ""
 }
