@@ -3,7 +3,8 @@ gml_pragma("global", "game_init()");
 // rooms
 global.rooms[0] = r_game_space_1;
 
-surface_resize(application_surface, 680, 384);
+surface_resize(application_surface, 1360, 768);
+display_set_gui_size(680, 384);
 
 // saves
 for (var i = 0; i < 3; i++) {

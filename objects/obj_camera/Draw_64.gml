@@ -94,7 +94,7 @@ if (instance_exists(obj_ship_player)) {
 			}
 			targetHp = currentTarget.hp;
 		}
-		draw_sprite_ext(targetSprite, targetIndex, hudX + 48, hudY + 56, 1.0, 1.0, 0, c_white, 0.5);
+		draw_sprite_ext(targetSprite, targetIndex, hudX + 48, hudY + 56, 2.0, 2.0, 0, c_white, 0.5);
 		drawText(hudX + 64, hudY + 48, "TARGET: " + targetType, 1, c_white, 0.5);
 		drawText(hudX + 64, hudY + 56, "HP: " + string(targetHp), 1, c_white, 0.5);
 	}
