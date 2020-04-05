@@ -53,6 +53,16 @@
             "enumb": 6,
             "eventtype": 2,
             "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
+        },
+        {
+            "id": "6e964c29-e9a3-4451-944d-4fab5835f451",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 2,
+            "m_owner": "1c9871ef-f190-496a-86f9-2724f3995bf1"
         }
     ],
     "maskSpriteId": "34dc61c7-c821-4110-b8a5-209c88143e87",
@@ -99,8 +109,8 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "cd",
-            "varType": 1
+            "varName": "laserReloading",
+            "varType": 3
         }
     ],
     "solid": false,

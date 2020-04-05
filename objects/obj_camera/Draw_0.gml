@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (instance_exists(obj_ship_player)) {
-	x = obj_ship_player.x + (obj_ship_player.hspeed * 20);
-	y = obj_ship_player.y + (obj_ship_player.vspeed * 15);
 	camX = camera_get_view_x(view_camera[0]);
 	camY = camera_get_view_y(view_camera[0]);
 	scale = 1 + (obj_ship_player.speed / 10);
-	camera_set_view_size(view_camera[0], 512 * scale, 384 * scale);
-	camera_set_view_border(view_camera[0], 512 * scale / 2, 384 * scale / 2);
+	camera_set_view_size(view_camera[0], 680 * scale, 384 * scale);
+	camera_set_view_border(view_camera[0], 680 * scale / 2, 384 * scale / 2);
 
 	adjustLayer("bg_space", scale, camX, camY);
 

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+statusShipRotation += 0.5;
 if (keyboard_check_pressed(vk_escape)) {
 	room_goto(global.currentRoom);
 }
@@ -16,7 +17,7 @@ if (keyboard_check_pressed(ord("W"))) {
 	switch (selectedTab) {
 		case 2:
 			// upgrade tab
-			upgradeSelection = (upgradeSelection + 5 - 1) % 5;
+			upgradeSelection = (upgradeSelection + 6 - 1) % 6;
 			break;
 	}
 }
@@ -24,11 +25,10 @@ if (keyboard_check_pressed(ord("S"))) {
 	switch (selectedTab) {
 		case 2:
 			// upgrade tab
-			upgradeSelection = (upgradeSelection + 1) % 5;
+			upgradeSelection = (upgradeSelection + 1) % 6;
 			break;
 	}
 }
-
 if (keyboard_check_pressed(ord("E"))) {
 	switch (selectedTab) {
 		case 0:
@@ -66,12 +66,15 @@ if (keyboard_check_pressed(ord("E"))) {
 					}
 					break;
 				case 2:
-					global.player_equipped_laserDmg = upgrade(global.upg_laserDmg, global.player_equipped_laserDmg);
+					global.player_equipped_shipCargo = upgrade(global.upg_shipCargo, global.player_equipped_shipCargo);
 					break;
 				case 3:
-					global.player_equipped_laserReload = upgrade(global.upg_laserReload, global.player_equipped_laserReload);
+					global.player_equipped_laserDmg = upgrade(global.upg_laserDmg, global.player_equipped_laserDmg);
 					break;
 				case 4:
+					global.player_equipped_laserReload = upgrade(global.upg_laserReload, global.player_equipped_laserReload);
+					break;
+				case 5:
 					global.player_equipped_laserCount = upgrade(global.upg_laserCount, global.player_equipped_laserCount);
 					break;
 			}
@@ -93,5 +96,12 @@ if (keyboard_check_pressed(ord("F"))) {
 			break;
 	}
 }
-
-statusShipRotation += 0.5;
+if (keyboard_check_pressed(ord("Q"))) {
+	switch (selectedTab) {
+		case 0:
+			// change color
+			var size = array_length_1d(global.ship_colors);
+			global.player_skinColor = (global.player_skinColor + size - 1) % size;
+			break;
+	}
+}
