@@ -217,6 +217,34 @@
             "value": "",
             "varName": "message",
             "varType": 2
+        },
+        {
+            "id": "72b055ee-d3f2-44e4-aa75-e0fd0739afa0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "mmScale",
+            "varType": 1
+        },
+        {
+            "id": "07ea5fa2-d575-406e-9fab-a2ab565e9c60",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "minimap",
+            "varType": 0
         }
     ],
     "solid": false,

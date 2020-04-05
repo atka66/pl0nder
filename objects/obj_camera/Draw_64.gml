@@ -102,4 +102,17 @@ if (instance_exists(obj_ship_player)) {
 	if (message != "") {
 		drawText(hudX + 384, 48, message, 1, c_white, 0.5);
 	}
+	//// minimap
+	surface_set_target(minimap);
+	draw_clear(c_black);
+	var mms = mmScale;
+	with (obj_ship_player) {draw_sprite(spr_minimap_player, 0, x / mms, y / mms);}
+	with (obj_ship_neutral) {draw_sprite(spr_minimap_enemy, 0, x / mms, y / mms);}
+	with (obj_asteroid) {draw_point_color(x / mms, y / mms, c_white);}
+	with (obj_mineral) {draw_sprite(spr_minimap_mineral, 0, x / mms, y / mms);}
+	with (obj_dock) {draw_sprite(spr_minimap_dock, 0, x / mms, y / mms);}
+	surface_reset_target();
+	var left = min(max(0, (obj_ship_player.x / mms) - 48), (room_width / mms) - 96);
+	var top = min(max(0, (obj_ship_player.y / mms) - 32), (room_height / mms) - 64);
+	draw_surface_part_ext(minimap, left, top, 96, 64, hudX + 544, hudY + 256, 1.0, 1.0, c_white, 0.5);
 }
