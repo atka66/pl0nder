@@ -23,11 +23,11 @@ global.ship_colors[9] = c_white;
 
 // minerals
 global.minerals = ds_grid_create(5, 2); // #0: display name - #1: value
-global.minerals[# 0,0] = "IRON"; global.minerals[# 0,1] = 10;
-global.minerals[# 1,0] = "GOLD"; global.minerals[# 1,1] = 20;
-global.minerals[# 2,0] = "EMERALD"; global.minerals[# 2,1] = 50;
-global.minerals[# 3,0] = "RUBY"; global.minerals[# 3,1] = 100;
-global.minerals[# 4,0] = "DIAMOND"; global.minerals[# 4,1] = 200;
+global.minerals[# 0,0] = "IRON"; global.minerals[# 0,1] = 20;
+global.minerals[# 1,0] = "GOLD"; global.minerals[# 1,1] = 50;
+global.minerals[# 2,0] = "EMERALD"; global.minerals[# 2,1] = 100;
+global.minerals[# 3,0] = "RUBY"; global.minerals[# 3,1] = 200;
+global.minerals[# 4,0] = "DIAMOND"; global.minerals[# 4,1] = 500;
 
 // upgrades
 global.upg_shipHp = ds_grid_create(4, 3); // #0: display name - #1: value - #2: maxHp
@@ -56,12 +56,12 @@ global.upg_laserDmg[# 3,0] = "UBERCANNON"; global.upg_laserDmg[# 3,1] = 20000; g
 
 global.upg_laserReload = ds_grid_create(3, 3); // #0: display name - #1: value - #2: cooldown
 global.upg_laserReload[# 0,0] = "SLOW"; global.upg_laserReload[# 0,1] = 0; global.upg_laserReload[# 0,2] = 0.5;
-global.upg_laserReload[# 1,0] = "MEDIUM"; global.upg_laserReload[# 1,1] = 5000; global.upg_laserReload[# 1,2] = 0.25;
-global.upg_laserReload[# 2,0] = "FAST"; global.upg_laserReload[# 2,1] = 20000; global.upg_laserReload[# 2,2] = 0.1;
+global.upg_laserReload[# 1,0] = "MEDIUM"; global.upg_laserReload[# 1,1] = 2000; global.upg_laserReload[# 1,2] = 0.25;
+global.upg_laserReload[# 2,0] = "FAST"; global.upg_laserReload[# 2,1] = 10000; global.upg_laserReload[# 2,2] = 0.1;
 
 global.upg_laserCount = ds_grid_create(3, 3); // #0: display name - #1: value - #2: count
 global.upg_laserCount[# 0,0] = "ONE"; global.upg_laserCount[# 0,1] = 0; global.upg_laserCount[# 0,2] = 1;
-global.upg_laserCount[# 1,0] = "TWO"; global.upg_laserCount[# 1,1] = 10000; global.upg_laserCount[# 1,2] = 2;
-global.upg_laserCount[# 2,0] = "THREE"; global.upg_laserCount[# 2,1] = 50000; global.upg_laserCount[# 2,2] = 3;
+global.upg_laserCount[# 1,0] = "TWO"; global.upg_laserCount[# 1,1] = 2000; global.upg_laserCount[# 1,2] = 2;
+global.upg_laserCount[# 2,0] = "THREE"; global.upg_laserCount[# 2,1] = 10000; global.upg_laserCount[# 2,2] = 3;
 
 global.currentDockName = "UNNAMED";

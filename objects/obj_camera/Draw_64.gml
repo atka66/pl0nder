@@ -60,17 +60,17 @@ if (instance_exists(obj_ship_player)) {
 	}
 	*/
 	//// credit
-	drawText(hudX + 24, hudY + 304, string(global.player_credit) + "C", 1.0, c_white, 0.5);
+	drawText(hudX + 24, hudY + 304, "CREDITS: " + string(global.player_credit) + "C", 1.0, c_white, 0.5);
 	//// cargo
 	drawText(
-		hudX + 24, hudY + 320, 
+		hudX + 24, hudY + 312, 
 		"CARGO: " + string(ds_list_size(global.player_cargo)) + "/" + string(global.upg_shipCargo[# global.player_equipped_shipCargo, 2]), 
 		1.0, c_white, 0.5
 	);
 	//// tooltip
 	with (obj_ship_player) {
 		if (place_meeting(x, y, obj_dock)) {
-			drawText(hudX + 64, hudY + 300, "E - DOCK", 2, c_white, 0.5);
+			drawText(hudX + 96, hudY + 288, "E - DOCK", 2, c_white, 0.5);
 		}
 	}
 	//// target
@@ -97,5 +97,9 @@ if (instance_exists(obj_ship_player)) {
 		draw_sprite_ext(targetSprite, targetIndex, hudX + 48, hudY + 56, 1.0, 1.0, 0, c_white, 0.5);
 		drawText(hudX + 64, hudY + 48, "TARGET: " + targetType, 1, c_white, 0.5);
 		drawText(hudX + 64, hudY + 56, "HP: " + string(targetHp), 1, c_white, 0.5);
+	}
+	//// message
+	if (message != "") {
+		drawText(hudX + 384, 48, message, 1, c_white, 0.5);
 	}
 }

@@ -40,7 +40,8 @@ if (selectedTab == 0) {
 	draw_sprite_part(spr_menu_bar, 1, 0, 0, hpRate * sprite_get_width(spr_menu_bar), sprite_get_height(spr_menu_bar), 192, 300);
 	drawText(192, 310, string(round(global.player_hp)) + "/" + string(maxHp), 1, c_white, 1.0);
 	if (global.player_hp < maxHp) {
-		drawText(256, 294, "E - REPAIR", 1, c_white, 1.0);
+		var repairCost = round(global.upg_shipHp[# global.player_equipped_shipHp, 2] - global.player_hp);
+		drawText(256, 294, "E - REPAIR (" + string(repairCost) + "C)", 1, c_white, 1.0);
 	}
 	drawText(192, 324, "FUEL", 2, c_white, 1.0);
 	draw_sprite(spr_menu_bar, 0, 192, 336);
@@ -49,7 +50,8 @@ if (selectedTab == 0) {
 	draw_sprite_part(spr_menu_bar, 2, 0, 0, fuelRate * sprite_get_width(spr_menu_bar), sprite_get_height(spr_menu_bar), 192, 336);
 	drawText(192, 346, string(round(global.player_fuel)) + "/" + string(maxFuel), 1, c_white, 1.0);
 	if (global.player_fuel < maxFuel) {
-		drawText(256, 330, "F - REFUEL", 1, c_white, 1.0);
+		var refuelCost = round((global.upg_shipFuel[# global.player_equipped_shipFuel, 2] - global.player_fuel) / 10);
+		drawText(256, 330, "F - REFUEL (" + string(refuelCost) + "C)", 1, c_white, 1.0);
 	}
 	
 	drawText(356, 128, "GENERAL", 2, c_white, 1.0);
@@ -82,7 +84,7 @@ if (selectedTab == 1) {
 			draw_sprite(spr_minerals, global.player_cargo[|i], xPos, yPos);
 		}
 	}
-	drawText(192, 180 + (((cargoSize - 1) div 10) * 28), "E - SELL ALL", 2, empty ? c_white : c_green, empty ? 0.5 : 1.0);
+	drawText(192, 180 + (((cargoSize - 1) div 10) * 28), "E - SELL ALL", 2, empty ? c_white : c_lime, empty ? 0.5 : 1.0);
 }
 
 // upgrade
