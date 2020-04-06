@@ -2,7 +2,7 @@
 // You can write your code in this editor
 statusShipRotation += 0.5;
 if (keyboard_check_pressed(vk_escape)) {
-	room_goto(global.currentRoom);
+	room_goto(r_game_space);
 }
 if (keyboard_check_pressed(vk_f2)) {
 	global.player_credit += 1000;

@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "6cec1b4b-c819-4248-be31-fd27a55095fa",
+            "Value": {
+                "id": "0abac0f6-5917-49bc-b0cf-469ac483b02c",
+                "resourcePath": "scripts\\initMap\\initMap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6f7dd4be-6288-4d25-9963-77d3976d87ab",
             "Value": {
                 "id": "4e0f7bdf-d3b0-4223-959a-518942d0966b",
@@ -551,14 +559,6 @@
             }
         },
         {
-            "Key": "9c557f75-389d-4db9-8227-f1d5dba3a3d3",
-            "Value": {
-                "id": "4c0f0f41-3eb0-41c7-9be4-e119bb35d13a",
-                "resourcePath": "rooms\\r_game_space_1\\r_game_space_1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "9ccb90b3-1f26-48fe-8c9d-c12c0a2a0a96",
             "Value": {
                 "id": "7e532ca2-0173-486b-a08b-8ae02bd88205",
@@ -596,6 +596,14 @@
                 "id": "a9acdf57-bda1-4e84-ace1-16fdfbf38369",
                 "resourcePath": "sprites\\spr_icon_ships\\spr_icon_ships.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ad425a53-f02e-4d5b-970b-3660a5d38b28",
+            "Value": {
+                "id": "eced1db3-c28f-424c-ba99-461bed9a4bd9",
+                "resourcePath": "rooms\\r_game_space\\r_game_space.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -810,6 +818,7 @@
     "script_order": [
         "7c090a98-6bf6-46e6-a7fd-36a57b2ce45f",
         "c7ea1294-3ed7-41fd-9693-d303f95aa5f2",
+        "6cec1b4b-c819-4248-be31-fd27a55095fa",
         "e3de890d-ce83-42ca-83db-48dde0977187",
         "63fdbdff-d234-463d-852d-3c805e3fbbb2",
         "86b122e0-3b21-484a-b1e2-fec4c9e376f3",

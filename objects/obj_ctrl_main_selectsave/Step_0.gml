@@ -5,7 +5,7 @@ if (keyboard_check_pressed(vk_escape)) {
 }
 if (keyboard_check_pressed(vk_space)) {
 	initGameVars();
-	room_goto(r_game_space_1);
+	room_goto(r_game_space);
 }
 
 if (appearBackground) {

@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
+        },
+        {
+            "id": "57b6b30d-630b-4d86-963b-fb44ff440b2c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -71,20 +81,6 @@
             "varType": 1
         },
         {
-            "id": "88958db2-b044-45f5-ac8d-64f914acd0e7",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "dropChance",
-            "varType": 0
-        },
-        {
             "id": "8f4f226c-3e3c-4e1d-8ab7-737934efb768",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -97,6 +93,20 @@
             "value": "0",
             "varName": "enemySpawn",
             "varType": 1
+        },
+        {
+            "id": "94509c48-e009-4224-8a1c-41f6451dd67f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "sectorName",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -12,3 +12,5 @@ global.player_credit = 0;
 global.player_hp = global.upg_shipHp[# global.player_equipped_shipHp, 2];
 global.player_fuel = global.upg_shipFuel[# global.player_equipped_shipFuel, 2];;
 global.player_cargo = ds_list_create();
+
+global.currentMapIndex = 0;
