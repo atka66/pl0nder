@@ -5,24 +5,34 @@
 
 var i = global.currentMapIndex;
 
+var sector = global.sectors[|i];
+
+global.currentSectorName = sector[? "sectorName"];
+
 // set room size
-room_width = global.sectors[i, 1];
-room_height = global.sectors[i, 2];
+room_width = sector[? "roomWidth"];
+room_height = sector[? "roomHeight"];
 
 // create dock
+var dock = sector[? "dock"];
 with (
-	instance_create_layer(global.sectors[i, 6], global.sectors[i, 7], "bg_objs", obj_dock
-)) {
-	dockSprite = global.sectors[i, 4];
-	size = global.sectors[i, 5];
-	name = global.sectors[i, 3];
+	instance_create_layer(dock[? "dockX"], dock[? "dockY"], "bg_objs", obj_dock)
+) {
+	dockSprite = asset_get_index(dock[? "dockSprite"]);
+	size = dock[? "dockImageScale"];
+	name = dock[? "dockName"];
 }
 
 // create player
-instance_create_layer(global.sectors[i, 8], global.sectors[i, 9], "fg_objs", obj_ship_player)
+instance_create_layer(sector[? "playerX"], sector[? "playerY"], "fg_objs", obj_ship_player);
 
 // ctrl config
-sectorName = global.sectors[i, 0];
-asteroidLimit = global.sectors[i, 10];
-maxAsteroidSize = global.sectors[i, 11];
-enemySpawn = global.sectors[i, 12];
+/// spawner
+var spawner = sector[? "spawner"];
+//// asteroid
+var spawnerAsteroid = spawner[? "asteroid"];
+asteroidMaxCount = spawnerAsteroid[? "maxCount"];
+asteroidMaxSize = spawnerAsteroid[? "maxSize"];
+//// enemy
+var spawnerEnemy = spawner[? "enemy"];
+enemyMaxCount = spawnerEnemy[? "maxCount"];

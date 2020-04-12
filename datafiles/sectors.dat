@@ -1,0 +1,1 @@
+{"sectors":[{"sectorName":"SECTOR 1","roomWidth":4096,"roomHeight":4096,"dock":{"dockName":"SOLVION","dockX":1024,"dockY":512,"dockSprite":"spr_planet_1","dockImageScale":15},"playerX":768,"playerY":256,"spawner":{"asteroid":{"maxCount":100,"maxSize":4},"enemy":{"maxCount":3}}}]}

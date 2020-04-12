@@ -62,22 +62,5 @@ global.upg_laserCount[# 0,0] = "ONE"; global.upg_laserCount[# 0,1] = 0; global.u
 global.upg_laserCount[# 1,0] = "TWO"; global.upg_laserCount[# 1,1] = 2000; global.upg_laserCount[# 1,2] = 2;
 global.upg_laserCount[# 2,0] = "THREE"; global.upg_laserCount[# 2,1] = 10000; global.upg_laserCount[# 2,2] = 3;
 
-// sectors
-// #0: display name - #1: sector width - #2: sector height - #3: dock name
-// #4: dock image index - #5: dock image scale - #6: dock x - #7: dock y 
-// #8: player x - #9: player y
-// #10: asteroidLimit - #11: maxAsteroidSize - #9: enemySpawn
-global.sectors[0, 0] = "SECTOR 1";
-global.sectors[0, 1] = 4096;
-global.sectors[0, 2] = 4096;
-global.sectors[0, 3] = "SOLVION";
-global.sectors[0, 4] = spr_planet_1;
-global.sectors[0, 5] = 15;
-global.sectors[0, 6] = 1024; global.sectors[0, 7] = 512;
-global.sectors[0, 8] = 768; global.sectors[0, 9] = 256;
-global.sectors[0, 10] = 100;
-global.sectors[0, 11] = 4;
-global.sectors[0, 12] = 3;
-
 // avoid undeclared variable issues for testing purposes
 global.currentDockName = "UNNAMED";

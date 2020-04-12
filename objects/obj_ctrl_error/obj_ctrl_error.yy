@@ -1,38 +1,58 @@
 {
-    "id": "0dbda505-2b67-4c44-af0f-9e7d4704e17c",
+    "id": "2a53702d-25f0-48ae-8a79-79aecd849b83",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ctrl_space",
+    "name": "obj_ctrl_error",
     "eventList": [
         {
-            "id": "3db10729-5282-4215-86e9-04d4cf7e1ee6",
+            "id": "9ac84ccc-d2a8-465d-8837-496fd7fe58ed",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
+            "eventtype": 8,
+            "m_owner": "2a53702d-25f0-48ae-8a79-79aecd849b83"
         },
         {
-            "id": "8370553c-0455-4411-a013-ea870bb6b18d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
-        },
-        {
-            "id": "57b6b30d-630b-4d86-963b-fb44ff440b2c",
+            "id": "69ab335b-7371-46e1-a405-33fa97536fb2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
+            "m_owner": "2a53702d-25f0-48ae-8a79-79aecd849b83"
+        },
+        {
+            "id": "286af651-71d7-4a55-977e-ab2e31942baf",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "2a53702d-25f0-48ae-8a79-79aecd849b83"
+        },
+        {
+            "id": "4aa2eed8-4d5c-47f3-aa27-330ff0e932b9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "2a53702d-25f0-48ae-8a79-79aecd849b83"
+        },
+        {
+            "id": "9b6bf367-6ef3-44e8-9886-5379f860a835",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 9,
+            "m_owner": "2a53702d-25f0-48ae-8a79-79aecd849b83"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,7 +73,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "e1392b4e-80f2-4542-84db-cf8358b87915",
+            "id": "526591fd-a9b7-45bb-a01f-be72c4f097e3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -63,11 +83,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "asteroidMaxCount",
-            "varType": 1
+            "varName": "appearBackground",
+            "varType": 3
         },
         {
-            "id": "45caecac-6b4f-4dff-9131-3f04b8763d3a",
+            "id": "99a77872-141a-459b-9a0d-8945d4ab9bfc",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -76,23 +96,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "asteroidMaxSize",
-            "varType": 1
-        },
-        {
-            "id": "8f4f226c-3e3c-4e1d-8ab7-737934efb768",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "enemyMaxCount",
-            "varType": 1
+            "value": "1",
+            "varName": "dim",
+            "varType": 0
         }
     ],
     "solid": false,

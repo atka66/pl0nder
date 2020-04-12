@@ -103,7 +103,7 @@ if (instance_exists(obj_ship_player)) {
 		drawText(hudX + 384, hudY + 48, message, 1, c_white, 0.5);
 	}
 	//// minimap
-	drawText(hudX + 544, hudY + 249, obj_ctrl_space.sectorName, 1, c_white, 0.5);
+	drawText(hudX + 544, hudY + 249, global.currentSectorName, 1, c_white, 0.5);
 	surface_set_target(minimap);
 	draw_clear(c_black);
 	var mms = mmScale;
