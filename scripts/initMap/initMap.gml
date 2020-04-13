@@ -1,11 +1,4 @@
-// #0: display name - #1: sector width - #2: sector height - #3: dock name
-// #4: dock image index - #5: dock image scale - #6: dock x - #7: dock y 
-// #8: player x - #9: player y
-// #10: asteroidLimit - #11: maxAsteroidSize - #9: enemySpawn
-
-var i = global.currentMapIndex;
-
-var sector = global.sectors[|i];
+var sector = global.sectors[|global.currentMapIndex];
 
 sectorName = sector[? "name"];
 

@@ -121,8 +121,9 @@ if (state != hudState.death && instance_exists(obj_ship_player)) {
 			var sector = global.sectors[|i];
 			var sectorMapX = mapCenterX + sector[? "mapX"];
 			var sectorMapY = mapCenterY + sector[? "mapY"];
-			draw_sprite_ext(spr_hud_warp_select, 0, sectorMapX, sectorMapY, 1.0, 1.0, 0, c_white, 0.5);
-			drawText(sectorMapX - 16, sectorMapY - 16, sector[? "name"], 1, c_white, 0.5);
+			var alpha = warpSelectedSector == i ? 1 : 0.5;
+			draw_sprite_ext(spr_hud_warp_select, warpSelectedSector == i ? 1 : 0, sectorMapX, sectorMapY, 1.0, 1.0, 0, c_white, alpha);
+			drawText(sectorMapX - 16, sectorMapY - 16, sector[? "name"], 1, c_white, alpha);
 		}
 	}
 }

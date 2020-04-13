@@ -259,6 +259,20 @@
             "value": "hudState.none",
             "varName": "state",
             "varType": 4
+        },
+        {
+            "id": "a6898646-33eb-4c6a-ad96-b81c74c26785",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "warpSelectedSector",
+            "varType": 1
         }
     ],
     "solid": false,
