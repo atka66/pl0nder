@@ -33,10 +33,11 @@ if (alive) {
 	}
 
 	if (keyboard_check_pressed(ord("E"))) {
-		if (place_meeting(x, y, obj_dock)) {
+		var dockInst = instance_place(x, y, obj_dock);
+		if (dockInst != noone){
 			room_persistent = true;
 			globalizeVars();
-			global.currentDockName = obj_dock.name;
+			global.currentDockName = dockInst.name;
 			room_goto(r_game_menu_trade);
 			alarm[6] = 1;
 		}

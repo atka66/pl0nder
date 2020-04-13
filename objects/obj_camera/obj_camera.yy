@@ -245,6 +245,20 @@
             "value": "0",
             "varName": "minimap",
             "varType": 0
+        },
+        {
+            "id": "e99a65a5-0eeb-40e6-8b0b-18c04c405af2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "hudState.none",
+            "varName": "state",
+            "varType": 4
         }
     ],
     "solid": false,

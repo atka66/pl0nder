@@ -62,5 +62,12 @@ global.upg_laserCount[# 0,0] = "ONE"; global.upg_laserCount[# 0,1] = 0; global.u
 global.upg_laserCount[# 1,0] = "TWO"; global.upg_laserCount[# 1,1] = 2000; global.upg_laserCount[# 1,2] = 2;
 global.upg_laserCount[# 2,0] = "THREE"; global.upg_laserCount[# 2,1] = 10000; global.upg_laserCount[# 2,2] = 3;
 
+// hud state enum
+enum hudState {
+	none,
+	death,
+	warpMenu
+}
+
 // avoid undeclared variable issues for testing purposes
 global.currentDockName = "UNNAMED";

@@ -7,20 +7,23 @@ var i = global.currentMapIndex;
 
 var sector = global.sectors[|i];
 
-global.currentSectorName = sector[? "sectorName"];
+sectorName = sector[? "name"];
 
 // set room size
 room_width = sector[? "roomWidth"];
 room_height = sector[? "roomHeight"];
 
-// create dock
-var dock = sector[? "dock"];
-with (
-	instance_create_layer(dock[? "dockX"], dock[? "dockY"], "bg_objs", obj_dock)
-) {
-	dockSprite = asset_get_index(dock[? "dockSprite"]);
-	size = dock[? "dockImageScale"];
-	name = dock[? "dockName"];
+// create docks
+var docks = sector[? "docks"];
+for (var i = 0; i < ds_list_size(docks); i++) {
+	var dock = docks[|i];
+	with (
+		instance_create_layer(dock[? "posX"], dock[? "posY"], "bg_objs", obj_dock)
+	) {
+		name = dock[? "name"];
+		dockSprite = asset_get_index(dock[? "spriteName"]);
+		size = dock[? "imageScale"];
+	}
 }
 
 // create player

@@ -2,7 +2,7 @@
     "id": "0dbda505-2b67-4c44-af0f-9e7d4704e17c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ctrl_space",
+    "name": "obj_ctrl_sector",
     "eventList": [
         {
             "id": "3db10729-5282-4215-86e9-04d4cf7e1ee6",
@@ -93,6 +93,20 @@
             "value": "0",
             "varName": "enemyMaxCount",
             "varType": 1
+        },
+        {
+            "id": "5661f786-18af-4ca4-becb-f8f6215ea0cb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "UNNAMED",
+            "varName": "sectorName",
+            "varType": 2
         }
     ],
     "solid": false,

@@ -90,7 +90,7 @@
             "Key": "0dbda505-2b67-4c44-af0f-9e7d4704e17c",
             "Value": {
                 "id": "62e5cd0a-2927-41c3-b989-36834b845db1",
-                "resourcePath": "objects\\obj_ctrl_space\\obj_ctrl_space.yy",
+                "resourcePath": "objects\\obj_ctrl_sector\\obj_ctrl_sector.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -211,6 +211,14 @@
             "Value": {
                 "id": "65c1aacd-3d46-4f3b-b89e-2b407bda2359",
                 "resourcePath": "sprites\\bg_menu\\bg_menu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c118cdb-bc75-4b35-86c3-f0268f0be274",
+            "Value": {
+                "id": "27df4e20-6aec-4209-b66c-03bf67919672",
+                "resourcePath": "sprites\\spr_hud_warp_select\\spr_hud_warp_select.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -683,6 +691,14 @@
             "Value": {
                 "id": "f5cfca7d-4abb-4be7-8d82-07772a7ad2dd",
                 "resourcePath": "sprites\\spr_asteroid\\spr_asteroid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c363f4ef-0482-4bbb-aded-5d504444ae03",
+            "Value": {
+                "id": "3457a480-557e-4174-8030-d50eae8f984b",
+                "resourcePath": "sprites\\spr_hud_warp_menu\\spr_hud_warp_menu.yy",
                 "resourceType": "GMSprite"
             }
         },

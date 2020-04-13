@@ -4,7 +4,11 @@ if (instance_exists(obj_ship_player)) {
 	x = obj_ship_player.x + (obj_ship_player.hspeed * 30);
 	y = obj_ship_player.y + (obj_ship_player.vspeed * 15);
 	if (keyboard_check_pressed(ord("M"))) {
-		
+		if (state != hudState.warpMenu) {
+			state = hudState.warpMenu;
+		} else {
+			state = hudState.none;
+		}
 	}
 	if (shakePwr > 0) {
 		shakeOffsetX = irandom_range(-shakePwr, shakePwr);
@@ -12,6 +16,12 @@ if (instance_exists(obj_ship_player)) {
 		shakePwr--;
 	}
 } else {
+	if (state != hudState.death) {
+		state = hudState.death;
+	}
+}
+
+if (state == hudState.death) {
 	shakeOffsetX = irandom_range(-5, 5);
 	shakeOffsetY = irandom_range(-5, 5);
 	if (deathDim < 1) {

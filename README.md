@@ -1,5 +1,7 @@
 # Pl0nder
 
+## Download
+You can download the latest release from [**HERE**](https://atka66.itch.io/pl0nder).
 ## Contribution
 Feel free to leave improvement ideas and report bugs!
 
