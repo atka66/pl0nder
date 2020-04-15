@@ -143,14 +143,6 @@
             }
         },
         {
-            "Key": "1ee0150c-db36-4d75-8653-188d8321caee",
-            "Value": {
-                "id": "7141e643-0550-4a10-8632-710acd39f2b4",
-                "resourcePath": "sprites\\spr_planet_1\\spr_planet_1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "203454bb-9bfc-4a8d-a2be-23d285916513",
             "Value": {
                 "id": "4bdcc557-efc0-4652-8c86-10ac54f96a60",
@@ -387,6 +379,14 @@
             "Value": {
                 "id": "3b114b2a-2573-4cb6-9685-755091cba81a",
                 "resourcePath": "sprites\\spr_asteroid_particle\\spr_asteroid_particle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ba8e324-33d8-4732-b4df-cb427ad84013",
+            "Value": {
+                "id": "399dfd1c-8cc1-4d20-b043-680ee0789244",
+                "resourcePath": "sprites\\spr_planets_s\\spr_planets_s.yy",
                 "resourceType": "GMSprite"
             }
         },

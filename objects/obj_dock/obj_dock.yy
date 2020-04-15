@@ -42,9 +42,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_planet_1",
-            "varName": "dockSprite",
+            "value": "spr_planets_s",
+            "varName": "spriteName",
             "varType": 5
+        },
+        {
+            "id": "0921bcce-d55c-4864-b5fb-c0d18f738a02",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spriteIndex",
+            "varType": 0
         },
         {
             "id": "53a0e204-f8dd-44d4-bc92-d061c3387d1e",

@@ -10,11 +10,10 @@ room_height = sector[? "roomHeight"];
 var docks = sector[? "docks"];
 for (var i = 0; i < ds_list_size(docks); i++) {
 	var dock = docks[|i];
-	with (
-		instance_create_layer(dock[? "posX"], dock[? "posY"], "bg_objs", obj_dock)
-	) {
+	with (instance_create_layer(dock[? "posX"], dock[? "posY"], "bg_objs", obj_dock)) {
 		name = dock[? "name"];
-		dockSprite = asset_get_index(dock[? "spriteName"]);
+		spriteName = asset_get_index(dock[? "spriteName"]);
+		spriteIndex = dock[? "spriteIndex"];
 		size = dock[? "imageScale"];
 	}
 }
