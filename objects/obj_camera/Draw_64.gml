@@ -2,10 +2,12 @@
 // You can write your code in this editor
 var hudX = shakeOffsetX;
 var hudY = shakeOffsetY;
-// death overlay
+
+// dim
+draw_sprite_ext(bg_black, 0, 0, 0, 1.0, 1.0, 0, c_white, dim);
+// wrecked overlay
 if (state == hudState.death) {
-	draw_sprite_ext(bg_black, 0, 0, 0, 1.0, 1.0, 0, c_white, deathDim);
-	drawText(274, 180, "WRECKED", 3, c_white, deathDim);
+	drawText(274, 180, "WRECKED", 3, c_white, dim);
 }
 // hud
 draw_sprite_ext(spr_hud, 0, hudX, hudY, 1.0, 1.0, 0, c_white, 0.2);
@@ -63,8 +65,8 @@ if (state != hudState.death && instance_exists(obj_ship_player)) {
 	//// tooltip
 	with (obj_ship_player) {
 		var dockInst = instance_place(x, y, obj_dock);
-		if (dockInst != noone){
-			drawText(hudX + 96, hudY + 288, "E - DOCK TO " + dockInst.name, 2, c_white, 0.5);
+		if (dockInst != noone) {
+			drawText(hudX + 224, hudY + 32, "E - DOCK TO " + dockInst.name, 2, c_white, 0.5);
 		}
 	}
 	//// target
@@ -83,7 +85,8 @@ if (state != hudState.death && instance_exists(obj_ship_player)) {
 			);
 			
 			switch (currentTarget.object_index) {
-				case obj_ship_neutral: targetType = "SHIP"; targetSprite = spr_icon_ships; targetIndex = currentTarget.skinImage; break;
+				case obj_ship_enemy: targetType = "HOSTILE SHIP"; targetSprite = spr_icon_ships; targetIndex = currentTarget.skinImage; break;
+				case obj_ship_neutral: targetType = "NEUTRAL SHIP"; targetSprite = spr_icon_ships; targetIndex = currentTarget.skinImage; break;
 				case obj_asteroid: targetType = "ASTEROID"; targetSprite = spr_icon_asteroid; targetIndex = 0; break;
 			}
 			targetHp = currentTarget.hp;
@@ -91,6 +94,10 @@ if (state != hudState.death && instance_exists(obj_ship_player)) {
 		draw_sprite_ext(targetSprite, targetIndex, hudX + 48, hudY + 56, 2.0, 2.0, 0, c_white, 0.5);
 		drawText(hudX + 64, hudY + 48, "TARGET: " + targetType, 1, c_white, 0.5);
 		drawText(hudX + 64, hudY + 56, "HP: " + string(targetHp), 1, c_white, 0.5);
+	}
+	//// hostileinfo
+	if (instance_exists(obj_ship_enemy)) {
+		drawText(512, 36, "HOSTILE SHIPS APPROACHING", 1, c_red, 0.5);
 	}
 	//// message
 	if (message != "") {
@@ -102,7 +109,8 @@ if (state != hudState.death && instance_exists(obj_ship_player)) {
 	draw_clear(c_black);
 	var mms = mmScale;
 	with (obj_ship_player) {draw_sprite(spr_minimap_player, 0, x / mms, y / mms);}
-	with (obj_ship_neutral) {draw_sprite(spr_minimap_enemy, 0, x / mms, y / mms);}
+	with (obj_ship_neutral) {draw_sprite(spr_minimap_neutral, 0, x / mms, y / mms);}
+	with (obj_ship_enemy) {draw_sprite(spr_minimap_enemy, 0, x / mms, y / mms);}
 	with (obj_asteroid) {draw_point_color(x / mms, y / mms, c_white);}
 	with (obj_mineral) {draw_sprite(spr_minimap_mineral, 0, x / mms, y / mms);}
 	with (obj_dock) {draw_sprite(spr_minimap_dock, 0, x / mms, y / mms);}

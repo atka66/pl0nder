@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "6a3c35b9-1969-459b-9894-2e026fe2e2b2",
+            "Value": {
+                "id": "ef09c05b-35fc-4596-8eef-604fd29a5489",
+                "resourcePath": "sprites\\spr_minimap_neutral\\spr_minimap_neutral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6cec1b4b-c819-4248-be31-fd27a55095fa",
             "Value": {
                 "id": "0abac0f6-5917-49bc-b0cf-469ac483b02c",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "9cce0804-749f-40a2-a056-b8e7d7e74edc",
+            "Value": {
+                "id": "081e5b60-f1e2-49a0-8369-5ce93d769e33",
+                "resourcePath": "sprites\\spr_planets_m\\spr_planets_m.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a512da88-023c-4ecf-a644-5bb6078ce28f",
             "Value": {
                 "id": "4a9d61bb-84ef-4c03-9d75-13886bf0d614",
@@ -724,6 +740,14 @@
                 "id": "4192422e-7c68-400f-9257-e3e6b0a6bd53",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cefae46a-4f40-4bf5-9c22-b64033d8db8c",
+            "Value": {
+                "id": "bf774e1d-b9b4-4a6f-b359-e455fd5ff491",
+                "resourcePath": "objects\\obj_ship_enemy\\obj_ship_enemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {

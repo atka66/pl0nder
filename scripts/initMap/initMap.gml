@@ -29,4 +29,10 @@ asteroidMaxCount = spawnerAsteroid[? "maxCount"];
 asteroidMaxSize = spawnerAsteroid[? "maxSize"];
 //// enemy
 var spawnerEnemy = spawner[? "enemy"];
-enemyMaxCount = spawnerEnemy[? "maxCount"];
+enemyCount = spawnerEnemy[? "count"];
+enemyFreq = spawnerEnemy[? "freq"];
+enemyHp = spawnerEnemy[? "hp"];
+enemyDmg = spawnerEnemy[? "dmg"];
+//// convoy
+var spawnerConvoy = spawner[? "convoy"];
+convoyFreq = spawnerConvoy[? "freq"];

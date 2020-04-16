@@ -12,6 +12,3 @@ while (instance_number(obj_asteroid) < asteroidMaxCount) {
 		}
 	}
 }
-if (instance_number(obj_ship_neutral) < 1 && alarm[0] <= 0) {
-	alarm[0] = irandom(room_speed * 10);
-}

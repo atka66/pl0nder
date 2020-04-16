@@ -1,43 +1,85 @@
 {
-    "id": "0dbda505-2b67-4c44-af0f-9e7d4704e17c",
+    "id": "cefae46a-4f40-4bf5-9c22-b64033d8db8c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ctrl_sector",
+    "name": "obj_ship_enemy",
     "eventList": [
         {
-            "id": "3db10729-5282-4215-86e9-04d4cf7e1ee6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
-        },
-        {
-            "id": "8370553c-0455-4411-a013-ea870bb6b18d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
-        },
-        {
-            "id": "57b6b30d-630b-4d86-963b-fb44ff440b2c",
+            "id": "1c8b3eee-9645-40ac-9543-bd71b2e0c64e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0dbda505-2b67-4c44-af0f-9e7d4704e17c"
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "5c7ff1d9-c24d-472d-9910-c9e604b5abb8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "d4bdf00e-1cdb-4beb-a6de-0b791555e905",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "88e16bb1-737d-4e48-877a-606ca83d7676",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 2,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "19aedf37-0c57-456f-aebb-43446b2b4b60",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "777f87d9-bde6-4f48-95db-046a5ef9e97c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
+        },
+        {
+            "id": "162fa45b-4d6e-448e-aa3d-4dca2c3c63b5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "cefae46a-4f40-4bf5-9c22-b64033d8db8c"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "34dc61c7-c821-4110-b8a5-209c88143e87",
+    "overriddenProperties": [
+        
+    ],
+    "parentObjectId": "fdc1eea3-88e6-40c9-b866-9b2432c45cf0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -53,7 +95,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "e1392b4e-80f2-4542-84db-cf8358b87915",
+            "id": "293b4101-f635-44d6-8c8e-8719ff35fa86",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -63,11 +105,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "asteroidMaxCount",
+            "varName": "skinImage",
             "varType": 1
         },
         {
-            "id": "45caecac-6b4f-4dff-9131-3f04b8763d3a",
+            "id": "c7cff65d-dfd0-4bfc-bd4d-a688303eb236",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -77,25 +119,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "asteroidMaxSize",
+            "varName": "skinColor",
             "varType": 1
         },
         {
-            "id": "5661f786-18af-4ca4-becb-f8f6215ea0cb",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "UNNAMED",
-            "varName": "sectorName",
-            "varType": 2
-        },
-        {
-            "id": "8f4f226c-3e3c-4e1d-8ab7-737934efb768",
+            "id": "3f54bd27-411b-48f1-aa85-f1fe5fc2d453",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -105,11 +133,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "enemyMaxCount",
+            "varName": "bounty",
             "varType": 1
         },
         {
-            "id": "341809ce-954e-4a8e-a9da-3ff08f5e35bc",
+            "id": "f3f3be5a-9a33-47a7-bb04-8d88b3723a02",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -119,22 +147,8 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "enemyFreq",
-            "varType": 1
-        },
-        {
-            "id": "5ac5d689-a6ce-48f9-86e0-da509414544e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "convoyFreq",
-            "varType": 1
+            "varName": "dmg",
+            "varType": 0
         }
     ],
     "solid": false,

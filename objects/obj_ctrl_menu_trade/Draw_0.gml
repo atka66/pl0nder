@@ -5,8 +5,8 @@
 drawText(32, 16, "WELCOME TO", 2, c_white, 1.0);
 drawText(48, 32, global.currentDockName, 4, c_white, 1.0);
 // credit
-drawText(512, 16, "CREDITS:", 2, c_white, 1.0);
-drawText(512, 32, string(global.player_credit) + "C", 3, c_white, 1.0);
+drawText(384, 16, "CREDITS:", 2, c_white, 1.0);
+drawText(384, 32, string(global.player_credit) + "C", 4, c_white, 1.0);
 // tabs
 var tabY = 88;
 if (selectedTab == 0) {
