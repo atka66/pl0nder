@@ -14,7 +14,6 @@ for (var i = 0; i < ds_list_size(docks); i++) {
 		name = dock[? "name"];
 		spriteName = asset_get_index(dock[? "spriteName"]);
 		spriteIndex = dock[? "spriteIndex"];
-		size = dock[? "imageScale"];
 	}
 }
 
